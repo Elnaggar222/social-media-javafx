@@ -1,0 +1,1 @@
+java --module-path "C:\Users\ENG_ELnaggar\Downloads\openjfx-17.0.18_windows-x64_bin-sdk\javafx-sdk-17.0.18\lib" --add-modules javafx.controls,javafx.fxml -jar social_media_appp.jar
