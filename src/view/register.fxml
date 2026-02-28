@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.paint.Color?>
+
+<StackPane stylesheets="/view/styles.css" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="controller.RegisterController"
+           prefHeight="700.0" prefWidth="1100.0">
+
+    <AnchorPane styleClass="anchor-pane">
+        <HBox AnchorPane.topAnchor="80.0"
+              AnchorPane.bottomAnchor="80.0"
+              AnchorPane.leftAnchor="100.0"
+              AnchorPane.rightAnchor="100.0"
+              style="-fx-background-color: white; -fx-background-radius: 30;">
+
+            <effect>
+                <DropShadow height="60.0"
+                            radius="29.5"
+                            width="60.0"
+                            blurType="GAUSSIAN">
+                    <color>
+                        <Color blue="0.2" green="0.2" red="0.2" opacity="0.15" />
+                    </color>
+                </DropShadow>
+            </effect>
+
+            <children>
+
+                <!-- Left Purple Panel -->
+                <VBox alignment="CENTER"
+                      spacing="25.0"
+                      HBox.hgrow="ALWAYS"
+                      style="-fx-background-color: linear-gradient(to bottom right, #8e44ad, #6e2da1);
+                             -fx-background-radius: 30 0 0 30;
+                             -fx-padding: 50;">
+
+                    <Label text="Welcome Back!"
+                           style="-fx-font-size: 38px; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+                    <Label text="To keep connected with us please login with your personal info"
+                           textAlignment="CENTER"
+                           wrapText="true"
+                           maxWidth="260.0"
+                           style="-fx-font-size: 16px; -fx-text-fill: white;" />
+                </VBox>
+
+                <!-- Right Form Panel -->
+                <VBox alignment="CENTER"
+                      spacing="20.0"
+                      HBox.hgrow="ALWAYS"
+                      style="-fx-padding: 40;">
+
+                    <Label text="Create Account"
+                           style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: #6e2da1;" />
+
+                    <VBox spacing="12.0" maxWidth="320.0">
+                        <TextField fx:id="nameField" promptText="Full Name"/>
+                        <TextField fx:id="emailField" promptText="Email"/>
+                        <PasswordField fx:id="passwordField" promptText="Password"/>
+                    </VBox>
+
+                    <HBox alignment="CENTER" spacing="10.0">
+                        <Button text="Register"
+                                onAction="#handleRegister"
+                                prefWidth="120.0"
+                                prefHeight="45.0"/>
+
+                        <Button text="Go to Login"
+                                onAction="#goToLogin"
+                                prefWidth="120.0"
+                                prefHeight="45.0"/>
+                    </HBox>
+
+                    <Label fx:id="messageLabel"
+                           textFill="red"
+                           style="-fx-font-weight: bold;" />
+                </VBox>
+
+            </children>
+        </HBox>
+    </AnchorPane>
+</StackPane>
