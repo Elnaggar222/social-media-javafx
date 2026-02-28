@@ -225,22 +225,25 @@ Enter a keyword and choose Users or Posts. Results are displayed in the list.
 
 ## Screenshots
 - **News Feed**  
-  ![News Feed](https://screenshots/newsFeed.png)  
+  <img width="1920" height="1080" alt="newsFeed" src="https://github.com/user-attachments/assets/4e46ab16-f770-4ed4-b155-78f92c389d64" />
   Main feed showing posts, like/comment buttons, and post creation area.
 
 - **Profile Page**  
-  ![Profile](https://screenshots/profile.png)  
+   <img width="1920" height="1080" alt="profile" src="https://github.com/user-attachments/assets/c39e2379-8f2c-4796-8f8d-bd8332696859" />
   User profile with editable fields and profile picture upload.
 
 - **Friend Requests**  
-  ![Friend Requests](https://screenshots/friendRequest.png)  
+  <img width="1920" height="1080" alt="friendRequest" src="https://github.com/user-attachments/assets/1f670d31-4841-46a0-9a6c-820070fe764c" />
   Incoming friend requests and the option to send new requests.
 
 - **Friends List**  
-  ![Friends](https://screenshots/Friends.png)  
+  <img width="1920" height="1080" alt="Friends" src="https://github.com/user-attachments/assets/e738b05c-2536-4825-879b-62b580533883" />
   List of accepted friends.
 
+- **Notifications**  
+  <img width="1920" height="1080" alt="Notifications" src="https://github.com/user-attachments/assets/e608c76d-6b23-458c-bf6b-d19b40bf9e09" />
+  Likes , Comments and Friend Requests Notifications
+  
 - **Search Results**  
-  ![Search](https://screenshots/user_post_search.png)  
+  <img width="1920" height="1080" alt="user_post_search" src="https://github.com/user-attachments/assets/d2d9235b-f9de-476a-ba84-97a9bdb185bc" />
   Search for users or posts with results displayed.
-
