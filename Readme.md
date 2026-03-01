@@ -1,7 +1,31 @@
+
 # SocialApp - JavaFX Social Media Application
 
-## Project Overview
-**SocialApp** is a desktop social media application built with **JavaFX** and **MySQL**. It allows users to register, log in, create posts with text and images, manage their profile, interact with posts via likes and comments, send and accept friend requests, search for users and posts, and receive notifications. The app follows an MVC architecture with clear separation of concerns (Model, View, Controller, DAO, Utilities).
+## How to Run the App
+
+You can quickly run **SocialApp** using the provided `New Text Document.bat` file. This batch file automatically sets up JavaFX paths and launches the application.
+
+### Steps
+
+1. **Ensure Java 17 or higher is installed** on your system.
+2. **Place the BAT file** in the same directory as your JAR file (e.g., `social_media_app.jar`).
+3. **Edit the BAT file (optional)** if your JavaFX SDK is in a different location:
+```bat
+@echo off
+SET JAVAFX_PATH=C:\path\to\javafx-sdk-17\lib
+SET JAR_NAME=social_media_app.jar
+
+java --module-path "%JAVAFX_PATH%" --add-modules javafx.controls,javafx.fxml -jar "%JAR_NAME%"
+pause
+```
+- Replace `C:\path\to\javafx-sdk-17\lib` with the path to your JavaFX `lib` folder.  
+- Make sure the JAR name matches your compiled JAR.
+
+4. **Run the BAT file**  
+   - Double-click `New Text Document.bat`  
+   - The app will launch automatically.
+
+> ⚡ Tip: The `pause` command keeps the console open so you can see errors if the app fails to start.
 
 ---
 
@@ -177,10 +201,6 @@ private static final String PASSWORD = "your_password";
 
 ## Usage Instructions
 
-### Compile and Run
-Ensure Java 17 and JavaFX are installed.
-Run `MainApp.java` from your IDE or using the provided JAR.
-
 ### First Time
 Register a new account (name, email, password). After registration, log in with your credentials.
 
@@ -225,25 +245,25 @@ Enter a keyword and choose Users or Posts. Results are displayed in the list.
 
 ## Screenshots
 - **News Feed**  
-  <img width="1920" height="1080" alt="newsFeed" src="https://github.com/user-attachments/assets/4e46ab16-f770-4ed4-b155-78f92c389d64" />
+  ![newsFeed](https://github.com/user-attachments/assets/4e46ab16-f770-4ed4-b155-78f92c389d64)
   Main feed showing posts, like/comment buttons, and post creation area.
 
 - **Profile Page**  
-   <img width="1920" height="1080" alt="profile" src="https://github.com/user-attachments/assets/c39e2379-8f2c-4796-8f8d-bd8332696859" />
+  ![profile](https://github.com/user-attachments/assets/c39e2379-8f2c-4796-8f8d-bd8332696859)
   User profile with editable fields and profile picture upload.
 
 - **Friend Requests**  
-  <img width="1920" height="1080" alt="friendRequest" src="https://github.com/user-attachments/assets/1f670d31-4841-46a0-9a6c-820070fe764c" />
+  ![friendRequest](https://github.com/user-attachments/assets/1f670d31-4841-46a0-9a6c-820070fe764c)
   Incoming friend requests and the option to send new requests.
 
 - **Friends List**  
-  <img width="1920" height="1080" alt="Friends" src="https://github.com/user-attachments/assets/e738b05c-2536-4825-879b-62b580533883" />
+  ![Friends](https://github.com/user-attachments/assets/e738b05c-2536-4825-879b-62b580533883)
   List of accepted friends.
 
 - **Notifications**  
-  <img width="1920" height="1080" alt="Notifications" src="https://github.com/user-attachments/assets/e608c76d-6b23-458c-bf6b-d19b40bf9e09" />
-  Likes , Comments and Friend Requests Notifications
-  
+  ![Notifications](https://github.com/user-attachments/assets/e608c76d-6b23-458c-bf6b-d19b40bf9e09)
+  Likes, Comments and Friend Requests Notifications
+
 - **Search Results**  
-  <img width="1920" height="1080" alt="user_post_search" src="https://github.com/user-attachments/assets/d2d9235b-f9de-476a-ba84-97a9bdb185bc" />
+  ![user_post_search](https://github.com/user-attachments/assets/d2d9235b-f9de-476a-ba84-97a9bdb185bc)
   Search for users or posts with results displayed.
